@@ -1,4 +1,5 @@
 # Yury Buiko
+
 # Contacts
 * Phone: +375336227958
 * Email: warband00@gmail.com
@@ -7,6 +8,7 @@
 * Discord: @warband0
 
 # About me
+
 # Skills
   * Basic: C++, JavaScript, HTML, CSS
   * Photoshop
@@ -28,3 +30,10 @@ Get the Middle Character (from Codewars)
   }
 } ```
 
+# Experience
+I don't have  expirience in the field of web development
+
+# Education
+ * University: Belarusian State Agrarian Technical University, mechanical engineer (4 course)
+ # English
+ A2(studied at the university and on paid courses)
