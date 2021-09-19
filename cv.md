@@ -2,6 +2,21 @@
 # Contacts
 * Phone: +375336227958
 * Email: warband00@gmail.com
-* [vk](https://vk.com/yurka_buiko)
+* [VK](https://vk.com/yurka_buiko)
 * [Git](https://github.com/warband0)
 * Discord: @warband0
+# About me
+# Code example: 
+Get the Middle Character (from Codewars)
+``` function getMiddle(s)
+{
+  let array = s.split('');
+  if (array.length % 2 == 0) {
+    let j = array[array.length / 2 - 1] + array[array.length / 2];
+    return j;
+  } else {
+    let j = array[(array.length / 2) - ((array.length % 2)/2)];
+    return j;
+  }
+} ```
+
