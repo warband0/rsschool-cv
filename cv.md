@@ -8,6 +8,7 @@
 * Discord: @warband0
 
 # About me
+21 years old. I'm a fourth-year students of BSATU.
 
 # Skills
   * Basic: C++, JavaScript, HTML, CSS
@@ -28,12 +29,14 @@ Get the Middle Character (from Codewars)
     let j = array[(array.length / 2) - ((array.length % 2)/2)];
     return j;
   }
-} ```
+} 
+```
 
 # Experience
 I don't have  expirience in the field of web development
 
 # Education
  * University: Belarusian State Agrarian Technical University, mechanical engineer (4 course)
- # English
+ 
+# English
  A2(studied at the university and on paid courses)
