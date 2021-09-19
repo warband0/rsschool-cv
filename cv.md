@@ -5,7 +5,15 @@
 * [VK](https://vk.com/yurka_buiko)
 * [Git](https://github.com/warband0)
 * Discord: @warband0
+
 # About me
+# Skills
+  * Basic: C++, JavaScript, HTML, CSS
+  * Photoshop
+  * Figma 
+  * Git
+  * Editors: Sublime, Atom, VSCode 
+
 # Code example: 
 Get the Middle Character (from Codewars)
 ``` function getMiddle(s)
