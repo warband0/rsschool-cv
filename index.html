@@ -31,15 +31,16 @@
     </header>
     <main>
         <div class="about-me">
-            <h2>About me:</h2>
+            <h2>About me</h2>
             <p>21 years old. I’m a fourth-year students of BSATU.</p>
         </div>
         <div class="education">
-            <h2>Education:</h2>
+            <h2>Education</h2>
             <p>University: Belarusian State Agrarian Technical University, mechanical engineer (4 course)</p>
         </div>
         <div class="skills">
             <div class="skills-coding">
+                <h2>Coding</h2>
                 <ul>
                     <li><p>HTML</p></li>
                     <li><p>CSS</p></li>
@@ -48,6 +49,7 @@
                 </ul>
             </div>
             <div class="skills-tools">
+                <h2>Tools&Technologies</h2>
               <ul>
                 <li><p>VSCode</p></li>
                 <li><p>Sublime Text</p></li>
@@ -59,12 +61,29 @@
             </div>
         </div>
         <div class="code-example">
+            <h2>Code example</h2>
             <p>
-                <code></code>
+                <code>
+                    function getMiddle(s){
+                        let array = s.split('');
+                        if (array.length % 2 == 0) {
+                           let j = array[array.length / 2 - 1] + array[array.length / 2];
+                           return j;
+                        } else {
+                           let j = array[(array.length / 2) - ((array.length % 2)/2)];
+                           return j;
+                        }
+                    } 
+                </code>
             </p>
         </div>
         <div class="language">
-            <ul></ul>
+            <h2>Language</h2>
+            <ul>
+                <li><p>Russian: (native speaker)</p></li>
+                <li><p>Belorussian: (native speaker)</p></li>
+                <li><p>English: A2(studied at the university and on paid courses)</p></li>
+            </ul>
         </div>
     </main>
     <footer>
