@@ -1,1 +1,1 @@
-https://warband0.github.io/rsschool-cv/index.html
+https://github.com/warband0/rsschool-cv/blob/gh-pages/index.html
