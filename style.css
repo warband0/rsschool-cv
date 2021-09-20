@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin: auto;
+
+}
+
+header {
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.role h2 {
+    font-size: 16px;
+    color: #2AAEE7;
+    margin: 0px 0px 7px;
+}
+
+.ava {
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    border: #2AAEE7  1px solid;
+}
+
+.contacts {
+    float: left;
+    margin: 7px 0px 7px;
+    width: 310px;
+}
+.contacts-icon {
+    width: 11px;
+    height: 11px;
+}
+
+.contact-ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+li.contact-li > p {
+    display: inline;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+.vk  {
+    display: inline;
+    font-size: 11px;
+}
+
+div.about-me {
+    font-family: Arial;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+}
+
+main {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 24px;
+}
+
+main > div {
+    width: 1fr;
+}
+
+main > div > div > h2 {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #73808D;
+    border-bottom: 0.5px solid #73808D;
+}
+
+div.skills > div > ul > li {
+    text-decoration: underline;
+    list-style-type: none;
+    margin: 0;
+}
+
+div.info-skills > div > div > h3 {
+    margin: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 100px;
+}
+
+div.github {
+   display: grid;
+   grid-template-columns: 24px auto;
+}
