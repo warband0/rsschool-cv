@@ -218,26 +218,26 @@ div.welcome div button {
   letter-spacing: 2px;
 }
 
-section.virtual-tour {
+section.virtual-tour-section {
   background-color: white;
   width: 1920px;
   height: 1266px;
 }
 
-div.gallery {
+div.virtual-tour-div {
   width: 1440px;
   height: 1116px;
   margin: 0 auto;
 }
 
-div.gallery h2 {
+div.virtual-tour-div h2 {
   color: #9D8665;
   padding-top: 75px;
   margin-bottom: 25px;
   margin-top: 0;
 }
 
-.gallery-cunt {
+.virtual-cunt {
   padding-top: 75px;
   border-top: #710707 3px solid;
   display: -webkit-box;
@@ -250,15 +250,15 @@ div.gallery h2 {
           column-gap: 60px;
 }
 
-div.gallery-img {
+div.virtual-tour-img {
   height: 100%;
 }
 
-div.gallery-img img {
+div.virtual-tour-img img {
   top: 0px;
 }
 
-div.gallery-img h3 {
+div.virtual-tour-img h3 {
   padding-top: 25px;
   margin: 0;
   font-family: Forum;
@@ -271,7 +271,7 @@ div.gallery-img h3 {
   color: #000000;
 }
 
-div.gallery-img p.virtual-text {
+div.virtual-tour-img p.virtual-text {
   width: 300px;
   padding-top: 10px;
   border-top: #710707 3px solid;
@@ -284,12 +284,59 @@ div.gallery-img p.virtual-text {
   margin-bottom: 10px;
 }
 
-div.gallery-img p.google-text {
+div.virtual-tour-img p.google-text {
   margin: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 200;
   font-size: 18px;
   line-height: 21px;
+}
+
+.explore {
+  max-width: 1920px;
+  max-height: 865px;
+}
+
+.explore-cunt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+div.explore-text {
+  max-width: 660px;
+  height: 715px;
+}
+
+div.explore-text h2 {
+  padding-bottom: 25px;
+  margin-bottom: 75px;
+  border-bottom: #710707 3px solid;
+}
+
+div.explore-text p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+
+div.explore-img {
+  max-width: 720px;
+}
+
+div.picture-container {
+  max-width: 1440px;
+  overflow-y: hidden;
 }
 /*# sourceMappingURL=style.css.map */
