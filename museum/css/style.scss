@@ -1,0 +1,209 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body {
+    background-color:black;
+    width: 1920px;
+    height: 9334px;
+    margin: 0 auto;
+    
+}
+
+header {
+    width: 1440px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.logo {
+    width: 49px;
+    height: 26px;
+    margin-right: 25px;
+}
+
+.logo-text {
+    width: 125px;
+    height: 31px;
+    left: 74px;
+    top: 2px;
+
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 31px;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+nav.navigation > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 55px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 775px
+}
+
+nav.navigation > ul > li {
+    Font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    height: 100%;
+
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+}
+
+h1 {
+    margin: 0;
+}
+.title {
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+div.welcome {
+    width: 1440px;
+    height: 810px;
+    background: url(/museum/assets/img/welcome.jpg) no-repeat;
+    background-position: top  right;
+    margin: 0 auto;
+    div {
+        padding-top: 150px;
+        width: 598px;
+        height: 388px;
+        p {
+            margin: 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 33px;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+            padding-top: 25px;
+            padding-bottom: 75px;
+        }
+        button {
+            width: 360px;
+            height: 75px;
+            background: #710707;
+            border-radius: 10px;
+            border-color: #710707;
+        }
+    }
+  }
+
+.welcome-url {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+section.virtual-tour{
+    background-color: white;
+    width: 1920px;
+    height: 1266px;
+}
+  
+div.gallery {
+    width: 1440px;
+    height: 1116px;
+    margin: 0 auto;
+    h2 {
+        color: #9D8665;
+        padding-top: 75px;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+}
+.gallery-cunt{
+        padding-top: 75px;
+        border-top: #710707 3px solid;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 75px;
+        column-gap: 60px;
+}
+
+div.gallery-img{
+    height: 100%;
+    img {
+        top: 0px;
+    }
+    h3 {
+        padding-top: 25px;
+        margin: 0;
+        font-family: Forum;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    p.virtual-text {
+        width: 300px;
+        padding-top: 10px;
+        border-top: #710707 3px solid;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    p.google-text{
+        margin: 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
