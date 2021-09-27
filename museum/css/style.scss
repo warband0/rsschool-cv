@@ -274,6 +274,194 @@ div.explore-img{
     }
 }
 
+.parallax {
+    width: 100%;
+    height: 400px;
+    background-image: url(/museum/assets/img/parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contacts-section {
+    background-color: white;
+    height: 966px;
+    width: 1920px;
+}
+
+div.contacts-cunt {
+    width: 1440px;
+    height: 813px;
+    margin: 0 auto;
+    padding-top: 75px;
+    h2{
+        margin-bottom: 25px;
+        color: #9D8665;
+    }
+}
+
+div.contacts-info {
+    border-top: #710707 3px solid;
+    display: flex;
+    height: 695px;
+    img{
+
+        width: 960px;
+        height: 620px;
+        margin-top: auto;
+        margin-left: auto;
+    }
+    
+}
+
+.ticket-section{
+    width: 1920px;
+    height: 893px;
+    background-color: white;
+}
+
+.ticket-cunt  {
+    width: 1440px;
+    margin: 0 auto;
+    h2{
+        color: #9D8665;
+        padding-top: 75px;
+        padding-bottom: 25px;
+        border-bottom: #710707 3px solid;
+    }
+}
+
+.ticket-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    img{
+        margin-right: 60px;
+    }
+}
+
+.tikcet-bold{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.type-ticket{
+    margin-right: 215px;
+    p.tikcet-bold{
+        padding-bottom: 50px;
+    }
+    ul{
+        li{
+            display: flex;
+            padding-bottom: 25px;
+            input{
+                margin-right: 23px;
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
+
+.amount {
+    width: 175px;
+    height: 341px;
+    text-align: end;
+
+}
+
+.buy-button{
+    width: 175px;
+    height: 50px;
+    margin-top: 52px;
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    }
+
+
+.amount-button {
+    div{
+        margin-left: auto;
+        input{
+            position: absolute;
+            left: 69px;
+            top: 53px;
+            all: unset;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+        }
+        button{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 37px;
+            width: 19px;
+            height: 38px;
+            text-align: center;
+
+        }
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 14px;
+        border: 3px solid #000000;
+        width: 150px;
+        height: 50px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+}
+
+.total{
+    margin-top: 50px;
+    margin-bottom: 8px;
+}
+
+.contact-text {
+    padding-top: 75px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    color: #000000;
+    h4 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        padding-bottom: 50px;
+    }
+    p {
+        font-size: 22px;
+        padding-bottom: 25px;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
 .footer{
     margin: 0 auto;
     width: 1440px;
@@ -320,5 +508,31 @@ ul.social-network{
         padding: 12px;
         border: 1px solid #666666;
         border-radius: 50px;
+    }
+}
+
+.footer-down {
+    a{
+        display: flex;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 22px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+    }
+    padding-top: 50px;
+    border-top: #666666 3px solid;
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    :nth-child(2) {
+        margin: 0 auto;
     }
 }

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">  
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">  
-    <title>Document</title>
+    <title>museum</title>
 </head>
 <body>
     <header>
@@ -95,7 +96,9 @@
                 <img src="assets/img/explorenotjs.jpg" alt="">
             </div>
         </section>
-        <section></section>
+        <section class="video">
+
+        </section>
         <section class="gallery">
             <div class="picture-container">
                 <h2 class="title">Art Gallery</h2>
@@ -118,8 +121,60 @@
                 </div>
               </div>
         </section>
-        <section></section>
-        <section></section>
+        <section class="ticket-section">
+            <div class="ticket-cunt">
+                <h2 class="title">BUY TICKETS</h2>
+                <div class="ticket-info">
+                    <img src="assets/img/ticket.jpg" alt="art">
+                    <div class="type-ticket">
+                        <p class="tikcet-bold">Ticket Type</p>
+                        <ul>
+                            <li><input checked type="radio" name="type" id=""><p>Permanent exhibition</p></li>
+                            <li><input type="radio" name="type" id=""><p>Temporary exhibition</p></li>
+                            <li><input type="radio" name="type" id=""><p>Combined Admission</p></li>
+                        </ul>
+                    </div>
+                    <div class="amount">
+                        <p class="tikcet-bold">Amount</p>
+                        <div class="amount-button">
+                            <p>Basic 18+</p>
+                            <div>
+                                <button type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="18+">
+                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                            
+                        </div>
+                        <div class="amount-button">
+                            <p>Senior 65+</p>
+                            <div>
+                                <button type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="65+">
+                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                        </div>
+                        <p class="tikcet-bold total">Total €220</p>
+                        <button class="buy-button">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="parallax"></div>
+        <section class="contacts-section">
+            <div class="contacts-cunt">
+                <h2 class="title">Contacts</h2>
+                <div class="contacts-info">
+                    <div class="contact-text">
+                        <h4>Palais Royal <br> Musee du Louvre</h4>
+                        <p>address: 75001 Paris, France</p>
+                        <p>phone: +33(0) 1 40 20 50 50</p>
+                        <p>mail: info@louvre.fr</p>
+                    </div>
+                    <img src="assets/img/contact-mapjpg.jpg" alt="contact map">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer">
