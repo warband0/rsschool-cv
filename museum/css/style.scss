@@ -131,7 +131,13 @@ div.welcome {
             border-color: #710707;
         }
     }
-  }
+}
+
+.welcome-slider{
+    position: absolute;
+    left: 1080px;
+    top: 840px;
+}
 
 .welcome-url {
     text-decoration: none;
@@ -243,6 +249,12 @@ div.explore-text {
 
 div.explore-img{
     max-width: 720px;
+}
+
+.video{
+    height: 1396px;
+    width: 1920px;
+    background-color: white;
 }
 
 .gallery {
@@ -511,6 +523,13 @@ ul.social-network{
     }
 }
 
+.footer-underline{
+    position: absolute;
+    left: 0px;
+    width: 1920px;
+    border-top: #666666 3px solid;
+}
+
 .footer-down {
     a{
         display: flex;
@@ -523,7 +542,6 @@ ul.social-network{
         color: #FFFFFF;
     }
     padding-top: 50px;
-    border-top: #666666 3px solid;
     display: flex;
     font-family: Roboto;
     font-style: normal;
