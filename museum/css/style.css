@@ -180,7 +180,7 @@ h1 {
 div.welcome {
   width: 1440px;
   height: 810px;
-  background: url(/museum/assets/img/welcome.jpg) no-repeat;
+  background: url(../../assets/images/welcome.jpg) no-repeat;
   background-position: top  right;
   margin: 0 auto;
 }
