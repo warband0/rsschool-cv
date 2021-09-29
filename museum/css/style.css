@@ -79,9 +79,15 @@ html {
 
 body {
   background-color: black;
-  width: 1920px;
   height: 9334px;
+  max-width: 1920px;
   margin: 0 auto;
+}
+
+button:hover {
+  background-color: #CAAA7D;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 
 header {
@@ -115,6 +121,12 @@ header {
   width: 49px;
   height: 26px;
   margin-right: 25px;
+}
+
+.logo:hover, .logo-text:hover {
+  color: #CAAA7D;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 
 .logo-text {
@@ -178,9 +190,10 @@ h1 {
 }
 
 div.welcome {
+  position: relative;
   width: 1440px;
   height: 810px;
-  background: url(/museum/assets/img/welcome.jpg) no-repeat;
+  background: url(../assets/img/welcome.jpg) no-repeat;
   background-position: top  right;
   margin: 0 auto;
 }
@@ -214,8 +227,8 @@ div.welcome div button {
 
 .welcome-slider {
   position: absolute;
-  left: 1080px;
-  top: 840px;
+  right: 0;
+  bottom: 0;
 }
 
 .welcome-url {
@@ -230,7 +243,6 @@ div.welcome div button {
 
 section.virtual-tour-section {
   background-color: white;
-  width: 1920px;
   height: 1266px;
 }
 
@@ -310,7 +322,6 @@ div.virtual-tour-img p.google-text {
 }
 
 .explore {
-  max-width: 1920px;
   max-height: 865px;
 }
 
@@ -357,7 +368,6 @@ div.explore-img {
 
 .video-section {
   height: 1396px;
-  width: 1920px;
   background-color: white;
 }
 
@@ -437,13 +447,30 @@ div.explore-img {
 
 .volume {
   width: 155px;
-  height: 15px;
 }
 
 .video-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1440px;
   height: 650px;
-  background-image: url(assets/video/poster0.jpg) cover;
+  background-image: url(../assets/video/poster0.jpg);
+  background-size: cover;
+}
+
+img.video-play:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
 }
 
 .video-gallery {
@@ -472,7 +499,6 @@ div.explore-img {
 
 .gallery {
   position: relative;
-  max-width: 1920px;
   height: 2200px;
 }
 
@@ -531,7 +557,7 @@ div.picture-container::after {
 .parallax {
   width: 100%;
   height: 400px;
-  background-image: url(/museum/assets/img/parallax.jpg);
+  background-image: url(../assets/img/parallax.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -539,7 +565,6 @@ div.picture-container::after {
 .contacts-section {
   background-color: white;
   height: 966px;
-  width: 1920px;
 }
 
 div.contacts-cunt {
@@ -570,7 +595,6 @@ div.contacts-info img {
 }
 
 .ticket-section {
-  width: 1920px;
   height: 893px;
   background-color: white;
 }
@@ -642,6 +666,10 @@ div.contacts-info img {
   text-align: end;
 }
 
+.amount p {
+  margin-bottom: 25px;
+}
+
 .buy-button {
   width: 175px;
   height: 50px;
@@ -666,6 +694,13 @@ div.contacts-info img {
   letter-spacing: 2px;
 }
 
+.amount-button p {
+  margin-top: 10px;
+  margin-left: 25px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
 .amount-button div {
   margin-left: auto;
   display: -webkit-box;
@@ -678,7 +713,6 @@ div.contacts-info img {
   border: 3px solid #000000;
   width: 150px;
   height: 50px;
-  margin-top: 15px;
   text-align: center;
 }
 
@@ -810,7 +844,7 @@ ul.social-network {
   display: flex;
   -webkit-column-gap: 25px;
           column-gap: 25px;
-  padding-top: h87px;
+  padding-top: 87px;
 }
 
 ul.social-network li {
@@ -819,10 +853,14 @@ ul.social-network li {
   border-radius: 50px;
 }
 
+li.social-icon:hover {
+  border: 1px solid #9D8665;
+}
+
 .footer-underline {
   position: absolute;
+  width: 100%;
   left: 0px;
-  width: 1920px;
   border-top: #666666 3px solid;
 }
 

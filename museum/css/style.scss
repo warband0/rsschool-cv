@@ -20,12 +20,18 @@ html{
     scroll-behavior: smooth
 }
 
+
 body {
     background-color:black;
-    width: 1920px;
     height: 9334px;
+    max-width: 1920px;
     margin: 0 auto;
     
+}
+
+button:hover{
+    background-color: #CAAA7D;
+    transition: ease-out 0.3s;
 }
 
 header {
@@ -48,6 +54,12 @@ header {
     height: 26px;
     margin-right: 25px;
 }
+
+.logo:hover, .logo-text:hover{
+    color: #CAAA7D;
+    transition: ease-out 0.3s;
+}
+
 
 .logo-text {
     width: 125px;
@@ -108,9 +120,10 @@ h1 {
 }
 
 div.welcome {
+    position: relative;
     width: 1440px;
     height: 810px;
-    background: url(/museum/assets/img/welcome.jpg) no-repeat;
+    background: url(../assets/img/welcome.jpg) no-repeat;
     background-position: top  right;
     margin: 0 auto;
     div {
@@ -141,8 +154,8 @@ div.welcome {
 
 .welcome-slider{
     position: absolute;
-    left: 1080px;
-    top: 840px;
+    right: 0;
+    bottom: 0;
 }
 
 .welcome-url {
@@ -157,7 +170,6 @@ div.welcome {
 
 section.virtual-tour-section{
     background-color: white;
-    width: 1920px;
     height: 1266px;
 }
   
@@ -227,7 +239,6 @@ div.virtual-tour-img{
 }
 
 .explore {
-    max-width: 1920px;
     max-height: 865px;
 }
 
@@ -268,7 +279,6 @@ div.explore-img{
 
 .video-section{
     height: 1396px;
-    width: 1920px;
     background-color: white;
 }
 
@@ -338,13 +348,24 @@ div.explore-img{
 
 .volume{
     width: 155px;
-    height: 15px;
 }
 
 .video-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1440px;
     height: 650px;
-    background-image: url(assets/video/poster0.jpg) cover;
+    background-image: url(../assets/video/poster0.jpg);
+    background-size: cover;
+}
+
+img.video-play{
+    &:hover{
+        transform:scale(1.1);
+        cursor: pointer;
+        transition: ease-out 0.5s;
+    }
 }
 
 .video-gallery{
@@ -364,7 +385,6 @@ div.explore-img{
 
 .gallery {
     position: relative;
-    max-width: 1920px;
     height: 2200px;
     
 }
@@ -413,7 +433,7 @@ div.picture-container::after{
 .parallax {
     width: 100%;
     height: 400px;
-    background-image: url(/museum/assets/img/parallax.jpg);
+    background-image: url(../assets/img/parallax.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -421,7 +441,6 @@ div.picture-container::after{
 .contacts-section {
     background-color: white;
     height: 966px;
-    width: 1920px;
 }
 
 div.contacts-cunt {
@@ -450,7 +469,6 @@ div.contacts-info {
 }
 
 .ticket-section{
-    width: 1920px;
     height: 893px;
     background-color: white;
 }
@@ -512,6 +530,9 @@ div.contacts-info {
     width: 175px;
     height: 341px;
     text-align: end;
+    p{
+        margin-bottom: 25px;
+    }
 
 }
 
@@ -535,6 +556,12 @@ div.contacts-info {
 
 
 .amount-button {
+    p{
+        margin-top: 10px;
+        margin-left: 25px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
     div{
         margin-left: auto;
         input{
@@ -566,7 +593,6 @@ div.contacts-info {
         border: 3px solid #000000;
         width: 150px;
         height: 50px;
-        margin-top: 15px;
         text-align: center;
     }
 
@@ -652,7 +678,7 @@ ul.social-network{
     width: 340px;
     display: flex;
     column-gap: 25px;
-    padding-top: h87px;
+    padding-top: 87px;
     li{
         padding: 12px;
         border: 1px solid #666666;
@@ -660,10 +686,14 @@ ul.social-network{
     }
 }
 
+li.social-icon:hover {
+    border: 1px solid #9D8665;
+}
+
 .footer-underline{
     position: absolute;
+    width: 100%;
     left: 0px;
-    width: 1920px;
     border-top: #666666 3px solid;
 }
 
