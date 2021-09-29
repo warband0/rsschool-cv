@@ -142,7 +142,10 @@ div.welcome {
             padding-top: 25px;
             padding-bottom: 75px;
         }
-        button {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 360px;
             height: 75px;
             background: #710707;
