@@ -15,6 +15,11 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
+
+html{
+    scroll-behavior: smooth
+}
+
 body {
     background-color:black;
     width: 1920px;
@@ -73,7 +78,8 @@ nav.navigation > ul {
     max-width: 775px
 }
 
-nav.navigation > ul > li {
+nav.navigation > ul > li > a{
+    
     Font-family: Roboto;
     font-style: normal;
     font-weight: 200;
@@ -177,6 +183,12 @@ div.virtual-tour-div {
 
 div.virtual-tour-img{
     height: 100%;
+    &:hover{
+        p.virtual-text {
+            width: 100%;
+            transition: ease-out 0.3s;
+        }
+    }
     img {
         top: 0px;
     }
@@ -231,6 +243,9 @@ div.virtual-tour-img{
 div.explore-text {
     max-width: 660px;
     height: 715px;
+    span{
+        color: #CAAA7D;
+    }
     h2 {
         padding-bottom: 25px;
         margin-bottom: 75px;
@@ -251,20 +266,112 @@ div.explore-img{
     max-width: 720px;
 }
 
-.video{
+.video-section{
     height: 1396px;
     width: 1920px;
     background-color: white;
 }
 
+.video-container{
+    margin: 0 auto;
+    width: 1440px;
+    height: 1246px; 
+}
+
+.video-text{
+    display: flex;
+    padding-bottom: 75px;
+    padding-top: 75px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        color: #9D8665;
+
+    }
+}
+
+.video-player{
+    height: 735px;
+    margin-bottom: 40px;
+    div.video-input{
+        width: 1440px;
+        height: 85px;
+        background-color: black;
+    }
+}
+
+.video-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.progress {
+    background: linear-gradient(
+      to right,
+      #710707 0%,
+      #710707 40%,
+      #C4C4C4 40%,
+      #C4C4C4 100%
+    );
+    height: 8px;
+    width: 929px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  
+  .progress::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #ffffff;
+  }
+
+.volume{
+    width: 155px;
+    height: 15px;
+}
+
+.video-img{
+    width: 1440px;
+    height: 650px;
+    background-image: url(assets/video/poster0.jpg) cover;
+}
+
+.video-gallery{
+    display: flex;
+    justify-content: space-between;
+    height: 254px;
+    video{
+        width: 452px;
+    }
+}
+
+.video-slider{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
 .gallery {
+    position: relative;
     max-width: 1920px;
+    height: 2200px;
     
 }
 
 .picture-container{
     margin: 0 auto;
-    height: 2035px;
+    height: 2200px;
     max-width: 1440px;
     overflow-y: hidden;
     h2 {
@@ -272,14 +379,31 @@ div.explore-img{
     }
 }
 
+.picture-inner-container img:first-child, .picture-inner-container img:nth-child(11) {
+    margin-top: 50px
+}
+
+div.picture-container::after{
+    margin: 0 auto;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    height: 360px;
+    width: 1440px;
+}
+
 .picture-inner-container {
     position: relative;
     max-width: 100%;
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 24px;
-    grid-column-gap: 36px;
+    max-height: 2960px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 24px;
+    columns: 3;
+    column-gap: 36px;
     padding-top: 75px;
     img{
         width: 456px;
@@ -460,6 +584,9 @@ div.contacts-info {
     font-weight: 300;
     line-height: 26px;
     color: #000000;
+    a{
+        color: #000000;
+    }
     h4 {
         font-weight: 500;
         font-size: 28px;
@@ -490,9 +617,18 @@ div.contacts-info {
     }
 }
 
+:any-link{
+    &:hover{
+        color: #9D8665;
+        cursor: pointer;
+        transition: ease-out 0.3s;
+    }
+}
+
 .footer-nav{
     li{
         a{
+            
             font-family: Roboto;
             font-style: normal;
             font-weight: 200;
@@ -516,6 +652,7 @@ ul.social-network{
     width: 340px;
     display: flex;
     column-gap: 25px;
+    padding-top: h87px;
     li{
         padding: 12px;
         border: 1px solid #666666;
