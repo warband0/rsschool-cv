@@ -455,7 +455,23 @@ div.explore-img {
 }
 
 .volume {
+  background: -webkit-gradient(linear, left top, right top, from(#710707), color-stop(40%, #710707), color-stop(40%, #C4C4C4), to(#C4C4C4));
+  background: linear-gradient(to right, #710707 0%, #710707 40%, #C4C4C4 40%, #C4C4C4 100%);
+  height: 8px;
   width: 155px;
+  outline: none;
+  -webkit-transition: background 450ms ease-in;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.volume::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #ffffff;
 }
 
 .video-img {
@@ -747,11 +763,252 @@ div.contacts-info img {
   width: 19px;
   height: 38px;
   text-align: center;
+  background: none;
 }
 
 .total {
   margin-top: 50px;
   margin-bottom: 8px;
+}
+
+.buy-tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1440px;
+  height: 845px;
+  background: #FFFFFF;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.div-1 {
+  width: 400px;
+  height: 663px;
+}
+
+.div-1 input, .div-1 select {
+  width: 400px;
+  height: 45px;
+  border: black 1px solid;
+  margin-bottom: 20px;
+}
+
+.form-header {
+  margin-bottom: 60px;
+}
+
+.form-header h4 {
+  color: #9D8665;
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+.form-header p {
+  display: block;
+  width: 100%;
+  border-bottom: #710707 3px solid;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #710707;
+  padding-bottom: 10px;
+}
+
+.date-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.date-time input {
+  width: 190px;
+  height: 45px;
+  border: black 1px solid;
+}
+
+div.entry-ticket {
+  border: #030303 1px solid;
+  padding: 10px 15px 0px 15px;
+}
+
+div.entry-ticket p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+div.entry-ticket > p {
+  border-bottom: #710707 3px solid;
+  font-family: Forum;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #9D8665;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+div.entry-ticket > div > div {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+}
+
+.form-button-container button {
+  width: 35px;
+  height: 25px;
+  background-color: black;
+}
+
+.form-button-container input {
+  width: 35px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+}
+
+.form-button-container .minus {
+  vertical-align: middle;
+}
+
+.form-button-container button:hover {
+  background-color: #710707;
+}
+
+.div-2 {
+  width: 530px;
+  height: 663px;
+  padding: 30px 25px;
+  border: #030303 1px solid;
+}
+
+.overview h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: #272727;
+  padding-bottom: 2px;
+}
+
+.overview p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #740C11;
+  padding-bottom: 10px;
+}
+
+.overview span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
+  margin-bottom: 5px;
+}
+
+.cost > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: 25px 126px auto;
+      grid-template-columns: 25px 126px auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cost > div span {
+  width: 32px;
+  height: 20px;
+  color: #A4A4A3;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: black;
+  border-radius: 20%;
+}
+
+.cost > div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.cost > div p:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.form-confirm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 15px auto;
+      grid-template-columns: 15px auto;
+  grid-row-gap: 5px;
+  grid-column-gap: 15px;
+}
+
+div.div-total {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  border-top: #710707 3px solid;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+div.div-total span {
+  background: none;
 }
 
 .contact-text {

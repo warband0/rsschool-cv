@@ -350,8 +350,28 @@ div.explore-img{
   }
 
 .volume{
-    width: 155px;
+    background: linear-gradient(
+        to right,
+        #710707 0%,
+        #710707 40%,
+        #C4C4C4 40%,
+        #C4C4C4 100%
+      );
+      height: 8px;
+      width: 155px;
+      outline: none;
+      transition: background 450ms ease-in;
+      -webkit-appearance: none;
 }
+
+.volume::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: #ffffff;
+  }
 
 .video-img{
     display: flex;
@@ -588,6 +608,7 @@ div.contacts-info {
             width: 19px;
             height: 38px;
             text-align: center;
+            background: none;
 
         }
         display: flex;
@@ -604,6 +625,213 @@ div.contacts-info {
 .total{
     margin-top: 50px;
     margin-bottom: 8px;
+}
+
+.buy-tickets{
+    display: flex;
+    width: 1440px;
+    height: 845px;
+    background: #FFFFFF;
+    column-gap: 40px;
+}
+
+
+.div-1{
+    width: 400px;
+    height: 663px;
+    input, select{
+        width: 400px;
+        height: 45px;
+        border: black 1px solid;
+        margin-bottom: 20px;
+    }
+}
+
+.form-header{
+    margin-bottom: 60px;
+    h4{
+        color: #9D8665;
+        font-family: Forum;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 55px;
+        text-transform: uppercase;
+    }
+    p{
+        display: block;
+        width: 100%;
+        border-bottom: #710707 3px solid;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #710707;
+        padding-bottom: 10px;
+    }
+}
+
+.date-time{
+    display: flex;
+    justify-content: space-between;
+    input{
+        width: 190px;
+        height: 45px;
+        border: black 1px solid;
+    }
+}
+
+div.entry-ticket{
+    border: #030303 1px solid;
+    padding: 10px 15px 0px 15px;
+    p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #030303;
+    }
+}
+
+div.entry-ticket > p{
+    border-bottom: #710707 3px solid;
+    font-family: Forum;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #9D8665;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+div.entry-ticket > div > div{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-button-container{
+    display: flex;
+    height: 25px;
+    button{
+        width: 35px;
+        height: 25px;
+        background-color: black;
+    }
+    input{
+        width: 35px;
+        height: 25px;
+        display: flex;
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #030303;
+    }
+    .minus{
+        vertical-align: middle;
+    }
+
+    button:hover{
+        background-color: #710707;
+    }
+}
+
+.div-2{
+    width: 530px;
+    height: 663px;
+    padding: 30px 25px;
+    border: #030303 1px solid;
+}
+
+.overview{
+    h4{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        color: #272727;
+        padding-bottom: 2px;
+    }
+    p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: #740C11;
+        padding-bottom: 10px;
+    }
+    span{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #030303;
+        margin-bottom: 5px;
+    }
+}
+
+.cost > div{
+    span{
+        width: 32px;
+        height: 20px;
+        color: #A4A4A3;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        background-color: black;
+        border-radius: 20%;
+    }
+    display: grid;
+    grid-template-rows:  auto auto;
+    grid-template-columns: 25px 126px auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 5px;
+    text-align: center;
+    vertical-align: middle;
+    p{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+div.cost > div{
+    p:nth-of-type(2){
+     margin-left: auto;
+    }
+}
+
+.form-confirm{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 15px auto;
+    grid-row-gap: 5px;
+    grid-column-gap: 15px;
+
+}
+
+div.div-total{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    border-top: #710707 3px solid;
+    margin-top: 10px;
+    padding-top: 10px;
+    span{
+        background: none;
+    }
 }
 
 .contact-text {
@@ -629,6 +857,8 @@ div.contacts-info {
         align-items: flex-end;
     }
 }
+
+
 
 .footer{
     margin: 0 auto;
